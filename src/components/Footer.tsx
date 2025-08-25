@@ -1,5 +1,6 @@
 import React from 'react';
 import { Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,12 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
                 <span className="text-blue-600 font-bold text-sm">PW</span>
               </div>
               <span className="text-xl font-bold">Passive Wealth</span>
-            </div>
+            </Link>
             <p className="text-gray-400 text-sm">
               AI-powered stock analysis and investment recommendations. 
               Make smarter investment decisions with artificial intelligence.
