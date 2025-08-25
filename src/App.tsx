@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import StockTable from './components/StockTable';
 import Footer from './components/Footer';
 import BacktestHistory from './components/BacktestHistory';
+import MomentumPortfolio from './components/MomentumPortfolio';
 import { mockStockData } from './data/mockData';
 
 function HomePage() {
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/backtest" element={<BacktestHistory />} />
+        <Route path="/momentum" element={<MomentumPortfolio />} />
       </Routes>
     </Router>
   );

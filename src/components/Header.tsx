@@ -20,7 +20,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="hover:text-blue-200 transition-colors">Top Stocks</a>
-            <a href="#" className="hover:text-blue-200 transition-colors">Stock Picks</a>
+            <Link to="/momentum" className="hover:text-blue-200 transition-colors">Momentum Portfolio</Link>
             <a href="#" className="hover:text-blue-200 transition-colors">Pricing</a>
             <a href="#" className="hover:text-blue-200 transition-colors">Market</a>
             <a href="#" className="hover:text-blue-200 transition-colors">Portfolios</a>
@@ -64,7 +64,7 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-blue-500">
             <nav className="flex flex-col space-y-4">
               <a href="#" className="hover:text-blue-200 transition-colors">Top Stocks</a>
-              <a href="#" className="hover:text-blue-200 transition-colors">Stock Picks</a>
+              <Link to="/momentum" className="hover:text-blue-200 transition-colors">Momentum Portfolio</Link>
               <a href="#" className="hover:text-blue-200 transition-colors">Pricing</a>
               <a href="#" className="hover:text-blue-200 transition-colors">Market</a>
               <a href="#" className="hover:text-blue-200 transition-colors">Portfolios</a>

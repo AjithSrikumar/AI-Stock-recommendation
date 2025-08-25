@@ -386,15 +386,24 @@ const StockTable: React.FC<StockTableProps> = ({ stocks, loading }) => {
       {/* Backtest History Button */}
       <div className="p-6 bg-gray-50 border-t border-gray-200">
         <div className="text-center">
-          <button
-            onClick={() => window.location.href = '/backtest'}
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            <BarChart3 className="w-5 h-5 mr-2" />
-            View Backtest History
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => window.location.href = '/backtest'}
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              <BarChart3 className="w-5 h-5 mr-2" />
+              View Backtest History
+            </button>
+            <button
+              onClick={() => window.location.href = '/momentum'}
+              className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <TrendingUp className="w-5 h-5 mr-2" />
+              Momentum Portfolio
+            </button>
+          </div>
           <p className="text-sm text-gray-600 mt-2">
-            See historical performance of our AI stock recommendations
+            Explore our systematic investment strategies and historical performance
           </p>
         </div>
       </div>
